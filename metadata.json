@@ -1,0 +1,6 @@
+{
+  "name": "Truly M — Stories Crafted by Hand",
+  "description": "Premium lookbook and artisanal textile catalogue for Truly M, celebrating handcrafted Indian home decor, bed linen, and heritage living.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
