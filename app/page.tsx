@@ -4,16 +4,21 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BentoGrid from '@/components/BentoGrid';
-import { SECTION_ONE_IMAGES, SECTION_TWO_IMAGES } from '@/data/lookbook-data';
+import {
+  SECTION_ONE_IMAGES,
+  SECTION_TWO_IMAGES,
+  SECTION_THREE_IMAGES,
+} from '@/data/lookbook-data';
 import { createBentoLayout } from '@/lib/lookbook-utils';
 
 export default function LookbookPage() {
   const sectionOneLayout = createBentoLayout(SECTION_ONE_IMAGES);
   const sectionTwoLayout = createBentoLayout(SECTION_TWO_IMAGES);
+  const sectionThreeLayout = createBentoLayout(SECTION_THREE_IMAGES);
 
   return (
     <div className="min-h-screen bg-[#FAF7F2] text-brand-charcoal flex flex-col justify-between">
-      {/* Header with only logo on the left */}
+      {/* Header with logo on the left and tagline on the right */}
       <Header />
 
       <main className="flex-1 w-full pb-20">
@@ -43,9 +48,24 @@ export default function LookbookPage() {
         <section className="w-full px-4 sm:px-8 md:px-12">
           <BentoGrid items={sectionTwoLayout} />
         </section>
+
+        {/* Separation Line Between Section 2 and Section 3 */}
+        <div className="w-full px-4 sm:px-8 md:px-12 py-14 sm:py-20">
+          <div className="relative flex items-center justify-center">
+            <div className="w-full border-t border-stone-300" />
+            <div className="absolute px-4 bg-[#FAF7F2]">
+              <span className="w-2 h-2 rounded-full bg-stone-400 block" />
+            </div>
+          </div>
+        </div>
+
+        {/* Third Section of Product Images (from public/images/3) */}
+        <section className="w-full px-4 sm:px-8 md:px-12">
+          <BentoGrid items={sectionThreeLayout} />
+        </section>
       </main>
 
-      {/* Footer with only Logo & Truly M Story */}
+      {/* Footer with Logo, Typing Motto & Truly M Story */}
       <Footer />
     </div>
   );

@@ -43,3 +43,33 @@ export const SECTION_TWO_IMAGES: string[] = [
   '/images/2/21.jpeg',
   '/images/2/22.jpeg',
 ];
+
+// All 26 product images from public/images/3/
+export const SECTION_THREE_IMAGES: string[] = [
+  '/images/3/1.jpeg',
+  '/images/3/2.jpeg',
+  '/images/3/3.jpeg',
+  '/images/3/4.jpeg',
+  '/images/3/5.jpeg',
+  '/images/3/6.jpeg',
+  '/images/3/7.jpeg',
+  '/images/3/8.jpeg',
+  '/images/3/9.jpeg',
+  '/images/3/10.jpeg',
+  '/images/3/11.jpeg',
+  '/images/3/12.jpeg',
+  '/images/3/13.jpeg',
+  '/images/3/14.jpeg',
+  '/images/3/15.jpeg',
+  '/images/3/16.jpeg',
+  '/images/3/17.jpeg',
+  '/images/3/18.jpeg',
+  '/images/3/19.jpeg',
+  '/images/3/20.jpeg',
+  '/images/3/21.jpeg',
+  '/images/3/22.jpeg',
+  '/images/3/23.jpeg',
+  '/images/3/24.jpeg',
+  '/images/3/25.jpeg',
+  '/images/3/26.jpeg',
+];

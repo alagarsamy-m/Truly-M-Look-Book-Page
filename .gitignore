@@ -65,4 +65,4 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 
-/ public/assets/aistudio/*
+/public/assets/aistudio/*
